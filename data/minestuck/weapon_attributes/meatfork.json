@@ -4,7 +4,7 @@
     "attack_range": 3,
     "pose": "",
     "two_handed": true,
-    "category": "fork",
+    "category": "trident",
     "attacks": [
       {
         "animation": "bettercombat:one_handed_stab"

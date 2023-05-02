@@ -1,5 +1,4 @@
 {
-  "parent": "bettercombat:spear",
   "attributes": {
     "attack_range": 3.5,
     "pose": "",
@@ -7,7 +6,26 @@
     "category": "fork",
     "attacks": [
       {
-        "animation": "bettercombat:one_handed_stab"
+        "conditions": [ "DUAL_WIELDING_ANY" ],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 0.85,
+        "angle": 0,
+        "upswing": 0.5,
+        "animation": "bettercombat:one_handed_stab",
+        "swing_sound": {
+          "id": "bettercombat:spear_stab"
+        }
+      },
+      {
+        "conditions": [ "NOT_DUAL_WIELDING" ],
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 1,
+        "angle": 0,
+        "upswing": 0.5,
+        "animation": "bettercombat:one_handed_stab",
+        "swing_sound": {
+          "id": "bettercombat:spear_stab"
+        }
       }
     ]
   }
